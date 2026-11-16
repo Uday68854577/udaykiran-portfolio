@@ -24,7 +24,7 @@ export const ContactSection: React.FC = () => {
     );
 
     window.location.href =
-      `mailto:karrinagababu10@gmail.com?subject=${subject}&body=${body}`;
+      `mailto:karriudaykiran389@gmail.com?subject=${subject}&body=${body}`;
 
     setSent(true);
   };
@@ -245,13 +245,13 @@ export const ContactSection: React.FC = () => {
                       overflowWrap: 'anywhere',
                     }}
                   >
-                    karrinagababu10@gmail.com
+                    karriudaykiran389@gmail.com
                   </span>
                 </a>
 
                 {/* PHONE */}
                 <a
-                  href="tel:+919652286489"
+                  href="tel:+917995484649"
                   className="block group min-w-0"
                 >
                   <span
@@ -284,7 +284,7 @@ export const ContactSection: React.FC = () => {
                       fontFamily: "'Montserrat', sans-serif",
                     }}
                   >
-                    +91 96522 88649
+                    +91 7995484649
                   </span>
                 </a>
 
@@ -370,7 +370,7 @@ export const ContactSection: React.FC = () => {
               break-words
             "
           >
-            KARRI NAGABABU // SOFTWARE DEVELOPER
+            KARRI UDAYKIRAN // SOFTWARE DEVELOPER
           </span>
 
           <span

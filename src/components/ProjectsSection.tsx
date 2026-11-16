@@ -9,84 +9,89 @@ interface Project {
   title: string;
   category: string;
   description: string;
+
   tech: string[];
+   href?: string;
+  linkLabel?: string;
   metrics: {
     label: string;
     value: string;
   }[];
+  
 }
 
 const projects: Project[] = [
+  // {
+  //   number: '01',
+  //   title: 'HYPER',
+  //   category: 'WEB APPLICATION / FINANCIAL PLATFORM',
+  //   description:
+  //     'A comprehensive web application developed for Hyniva featuring Dynamic Advisor, Portfolio Planner and CRM components. The platform provides personalized recommendations through interactive questionnaires along with risk analysis, simulations and administrative functionality.',
+  //   tech: [
+  //     'React.js',
+  //     'Redux',
+  //     'Material-UI',
+  //     'MySQL',
+  //     'Java',
+  //     'REST APIs',
+  //     'Styled Components',
+  //   ],
+  //   metrics: [
+  //     {
+  //       label: 'TYPE',
+  //       value: 'WEB APPLICATION',
+  //     },
+  //     {
+  //       label: 'TEAM',
+  //       value: '8 MEMBERS',
+  //     },
+  //     {
+  //       label: 'CLIENT',
+  //       value: 'HYNIVA',
+  //     },
+  //   ],
+  // },
+
+  // {
+  //   number: '02',
+  //   title: 'ALL WAYS-TRACK',
+  //   category: 'LOGISTICS / MOBILE + WEB',
+  //   description:
+  //     'A logistics and transportation management solution supporting fleet-based businesses. The React Native mobile application enables drivers and field staff to manage loads, update trip status, track routes, log hours and monitor vehicle maintenance. The ReactJS admin portal provides load management, driver performance, vehicle health, reporting, scheduling, accounting and compliance features.',
+  //   tech: [
+  //     'React Native',
+  //     'React.js',
+  //     'Redux',
+  //     'PHP',
+  //     'Laravel',
+  //     'AWS',
+  //     'REST APIs',
+  //     'Styled Components',
+  //   ],
+  //   metrics: [
+  //     {
+  //       label: 'TYPE',
+  //       value: 'CLIENT PROJECT',
+  //     },
+  //     {
+  //       label: 'TEAM',
+  //       value: '9 MEMBERS',
+  //     },
+  //     {
+  //       label: 'PLATFORMS',
+  //       value: 'MOBILE + WEB',
+  //     },
+  //   ],
+  // },
+
   {
     number: '01',
-    title: 'HYPER',
-    category: 'WEB APPLICATION / FINANCIAL PLATFORM',
-    description:
-      'A comprehensive web application developed for Hyniva featuring Dynamic Advisor, Portfolio Planner and CRM components. The platform provides personalized recommendations through interactive questionnaires along with risk analysis, simulations and administrative functionality.',
-    tech: [
-      'React.js',
-      'Redux',
-      'Material-UI',
-      'MySQL',
-      'Java',
-      'REST APIs',
-      'Styled Components',
-    ],
-    metrics: [
-      {
-        label: 'TYPE',
-        value: 'WEB APPLICATION',
-      },
-      {
-        label: 'TEAM',
-        value: '8 MEMBERS',
-      },
-      {
-        label: 'CLIENT',
-        value: 'HYNIVA',
-      },
-    ],
-  },
-
-  {
-    number: '02',
-    title: 'ALL WAYS-TRACK',
-    category: 'LOGISTICS / MOBILE + WEB',
-    description:
-      'A logistics and transportation management solution supporting fleet-based businesses. The React Native mobile application enables drivers and field staff to manage loads, update trip status, track routes, log hours and monitor vehicle maintenance. The ReactJS admin portal provides load management, driver performance, vehicle health, reporting, scheduling, accounting and compliance features.',
-    tech: [
-      'React Native',
-      'React.js',
-      'Redux',
-      'PHP',
-      'Laravel',
-      'AWS',
-      'REST APIs',
-      'Styled Components',
-    ],
-    metrics: [
-      {
-        label: 'TYPE',
-        value: 'CLIENT PROJECT',
-      },
-      {
-        label: 'TEAM',
-        value: '9 MEMBERS',
-      },
-      {
-        label: 'PLATFORMS',
-        value: 'MOBILE + WEB',
-      },
-    ],
-  },
-
-  {
-    number: '03',
     title: 'VITOXYZ',
-    category: 'HEALTHCARE / MOBILE APPLICATION',
+    category: 'HEALTHCARE /WEB & MOBILE APPLICATION',
     description:
       'A healthcare and wellness mobile application providing users with medicine ordering, healthcare staff booking, diet plans and fitness tracking. The application also integrates Razorpay for secure payments, subscriptions and plan purchases while providing a smooth cross-platform experience.',
     tech: [
+      'React.js',
       'React Native',
       'Redux',
       'Styled Components',
@@ -94,6 +99,8 @@ const projects: Project[] = [
       'Razorpay',
       'AWS',
     ],
+     href: "https://vitoxyz.com/medicines",
+    linkLabel: "Explore medicines",
     metrics: [
       {
         label: 'TYPE',
@@ -108,6 +115,39 @@ const projects: Project[] = [
         value: 'RAZORPAY',
       },
     ],
+    
+  },
+    {
+    number: '02',
+    title: 'Tredixo',
+    category: 'Financial technology · Web APPLICATION',
+    description:
+      'A trading platform built around live market information, portfolio tracking, and visual tools for following investments and performance.',
+    tech: [
+      'React.js',
+      'Redux',
+      'Styled Components',
+      'REST APIs',
+      'Razorpay',
+      'AWS',
+    ],
+    href: "https://tredixo.co.in/",
+    linkLabel: "Visit Tredixo",
+    metrics: [
+      {
+        label: 'TYPE',
+        value: 'Trading &Stockmarket APP',
+      },
+      {
+        label: 'TEAM',
+        value: '6 MEMBERS',
+      },
+      {
+        label: 'PAYMENTS',
+        value: 'RAZORPAY',
+      },
+    ],
+    
   },
 ];
 
@@ -670,8 +710,30 @@ export const ProjectsSection: React.FC = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
+                    <div>
 
+                    </div>
+                     <div  className="
+                        flex
+                        flex-wrap
+                        items-center
+                        gap-x-3
+                        gap-y-1
+                        mb-4
+                      ">
+                        <a  className="
+                          text-[9px]
+                          sm:text-[15px]
+                          font-mono
+                          font-bold
+                          text-[#D4AF37]
+                          whitespace-nowrap
+                        " href={project.href} target="_blank" rel="noreferrer">
+                  {project.linkLabel} 
+                </a>
+                  </div>
+                  </div>
+                 
                   {/* =================================================
                       PROJECT METRICS
                   ================================================= */}

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import watermarkImg from "../assets/watermark.png";
-import aboutBgImage from "../assets/aboutbgimage.png";
+import aboutBgImage from "../assets/SouthAsianManGolden.png";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -187,10 +187,10 @@ export const HeroSection: React.FC = () => {
             href="#"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
+            className="text-xs sm:text-sm font-semibold tracking-[4px] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            KARRI NAGABABU.
+            KARRI UDAYKIRAN.
           </a>
 
           <nav
@@ -320,7 +320,7 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I&apos;m Karri Nagababu, a Software Developer with 4 years of
+                I&apos;m Karri Udaykiran, a Software Developer with 1 year of
                 hands-on experience building responsive web applications and
                 cross-platform mobile products using React.js and React Native.
               </p>
@@ -353,8 +353,8 @@ export const HeroSection: React.FC = () => {
               </motion.a>
 
               <motion.a
-                href="/resume.pdf"
-                download="Karri-Nagababu-Resume.pdf"
+                href="/Udaykirankarri_Resume.pdf"
+                download="Karri-Udaykiran-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}
@@ -400,7 +400,7 @@ export const HeroSection: React.FC = () => {
                 letterSpacing: "0.04em",
               }}
             >
-              Nagababu
+              Udaykiran
             </div>
           </motion.div>
         </div>

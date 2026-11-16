@@ -2,15 +2,15 @@
 
 import React, { useRef, useState } from 'react';
 import {
-  motion,
+  motion,type Variants,
   useMotionValue,
   useTransform,
   useSpring,
 } from 'framer-motion';
 
-import aboutImg from '../assets/about.png';
+import aboutImg from '../assets/ProfessionalIndianManHeadshot.png';
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -21,7 +21,7 @@ const containerVariants = {
   },
 };
 
-const fadeUpVariants = {
+const fadeUpVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 30,
@@ -199,9 +199,9 @@ export const AboutSection: React.FC = () => {
             >
               I&apos;m{' '}
               <span className="text-[#F3DBB3] font-medium">
-                Karri Nagababu
+                Karri Udaykiran
               </span>
-              , a Software Developer with 4 years of hands-on experience
+              , a Software Developer with 1 year of hands-on experience
               specializing in React.js and React Native. I build responsive,
               scalable and visually refined web and mobile applications,
               with strong experience in state management, RESTful API
@@ -222,10 +222,10 @@ export const AboutSection: React.FC = () => {
                     fontFamily: "'Bebas Neue', sans-serif",
                   }}
                 >
-                  4
+                  1
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Years Experience
+                  Year Experience
                 </span>
               </div>
 
@@ -236,14 +236,14 @@ export const AboutSection: React.FC = () => {
                     fontFamily: "'Bebas Neue', sans-serif",
                   }}
                 >
-                  3
+                  1
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
-                  Years Hyniva
+                  Year Vitoxyz Private Limited
                 </span>
               </div>
 
-              <div className="flex flex-col">
+              {/* <div className="flex flex-col">
                 <span
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2]"
                   style={{
@@ -255,7 +255,7 @@ export const AboutSection: React.FC = () => {
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
                   Year Rohtek
                 </span>
-              </div>
+              </div> */}
 
               <div className="flex flex-col">
                 <span
@@ -264,7 +264,7 @@ export const AboutSection: React.FC = () => {
                     fontFamily: "'Bebas Neue', sans-serif",
                   }}
                 >
-                  3+
+                  2+
                 </span>
                 <span className="text-[10px] font-medium tracking-[0.22em] uppercase text-[#A8988B] mt-0.5">
                   Major Projects
@@ -348,7 +348,7 @@ export const AboutSection: React.FC = () => {
                       fontFamily: "'Herr Von Muellerhoff', cursive",
                     }}
                   >
-                    Nagababu
+                    Udaykiran
                   </span>
                 </div>
 

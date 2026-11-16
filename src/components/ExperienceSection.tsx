@@ -19,36 +19,54 @@ interface RouteStop {
 const journey: RouteStop[] = [
   {
     id: '01',
-    year: '3 YEARS',
-    title: 'SOFTWARE DEVELOPER',
-    organization: 'HYNIVA CONSULTING SERVICES PVT. LTD. • BANGALORE',
-    description:
-      'Worked as a React.js developer building dynamic and responsive user interfaces. Worked extensively with Material-UI, Redux Toolkit, Axios, React Hook Form, reusable components, Styled Components and RESTful APIs. Contributed to web and mobile application development and received the Star Performer recognition in December 2022.',
-  },
-  {
-    id: '02',
     year: '1 YEAR',
     title: 'SOFTWARE DEVELOPER',
-    organization: 'ROHTEK SOLUTIONS • HYDERABAD',
+    organization: 'Vitoxyz Private Limited · Mohali, Punjab',
     description:
-      'Worked on frontend and mobile application development using React.js and React Native. Applied reusable component architecture, state management, API integration and modern development workflows to deliver responsive application experiences.',
+      'Worked as a React.js developer building dynamic and responsive user interfaces. Worked extensively with Material-UI, Redux Toolkit, Axios, React Hook Form, reusable components, Styled Components and RESTful APIs. Contributed to web and mobile application development.Applied reusable component architecture, state management, API integration and modern development workflows to deliver responsive application experiences.',
   },
+  // {
+  //   id: '02',
+  //   year: '1 YEAR',
+  //   title: 'SOFTWARE DEVELOPER',
+  //   organization: 'ROHTEK SOLUTIONS • HYDERABAD',
+  //   description:
+  //     'Worked on frontend and mobile application development using React.js and React Native. Applied reusable component architecture, state management, API integration and modern development workflows to deliver responsive application experiences.',
+  // },
+  // {
+  //   id: '03',
+  //   year: 'DEC 2022',
+  //   title: 'STAR PERFORMER',
+  //   organization: 'HYNIVA CONSULTING SERVICES PVT. LTD.',
+  //   description:
+  //     'Recognized as a Star Performer of Hyniva for professional contribution and performance.',
+  // },
   {
-    id: '03',
-    year: 'DEC 2022',
-    title: 'STAR PERFORMER',
-    organization: 'HYNIVA CONSULTING SERVICES PVT. LTD.',
+    id: '02',
+    year: '2023',
+    title: 'B.TECH — COMPUTER SCIENCE',
+    organization:
+      'Kakinada Institute of Engineering & Technology • JNTUK',
     description:
-      'Recognized as a Star Performer of Hyniva for professional contribution and performance.',
+      'Completed B.Tech in Computer Science and Engineering with 63% from Kakinada Institute of Engineering & Technology, affiliated with JNTUK.',
+  },
+   {
+    id: '03',
+    year: '2019',
+    title: 'Intermediate - MPC',
+    organization:
+      'Sri Chaitanya Junior College • Kakinada',
+    description:
+      'Completed Intermediate with 86% from Sri Chaitanya Junior College, Kakinada.',
   },
   {
     id: '04',
-    year: '2021',
-    title: 'B.TECH — COMPUTER SCIENCE',
+    year: '2017',
+    title: 'Secondary school',
     organization:
-      'ADARSH COLLEGE OF ENGINEERING, CHEBROLU • JNTUK',
+      'S.N.V.Z.P.P. High School, • Tallarevu',
     description:
-      'Completed B.Tech in Computer Science and Engineering with 63% from Adarsh College of Engineering, affiliated with JNTUK.',
+      'Completed Secondary school with 78% from S.N.V.Z.P.P. High School, Tallarevu.',
   },
 ];
 

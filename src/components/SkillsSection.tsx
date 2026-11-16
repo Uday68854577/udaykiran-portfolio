@@ -18,7 +18,7 @@ const skillCategories = [
     ],
     description:
       'Building responsive and scalable web interfaces using reusable components, clean architecture and modern React development practices.',
-    stat: '4 YEARS',
+    stat: '1 YEAR',
     colSpan: 'lg:col-span-7',
   },
   {
